@@ -1,12 +1,14 @@
 import React from 'react';
 import About from '../About/About';
 import Header from '../Header/Header';
+import Myskills from '../Myskills/Myskills';
 
 const Home = () => {
     return (
         <div>
            <Header></Header>
            <About></About>
+           <Myskills></Myskills>
         </div>
     );
 };
