@@ -1,72 +1,95 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+    let activeStyle = {
+      textDecoration: "underline",
+      color: 'blue'
+  };
+
     return (
             <div className="p-1 bg-gray-800">
                 <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                   <div className="relative flex items-center justify-between">
-                    <a
-                      href="/"
-                      aria-label="Company"
-                      title="Company"
+                    <NavLink
+                     to="/"
+                      aria-label="home"
+                      title="home"
                       className="inline-flex items-center"
                     >
                      
-                      <span className="ml-2 text-xl md:text-2xl font-bold tracking-wide text-white uppercase">
+                      <span className="ml-2 text-xl md:text-2xl font-bold tracking-wide  uppercase text-green-500">
                         MD. Sayem miah
                       </span>
-                    </a>
+                   </NavLink>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/home"
                           aria-label="home"
                           title="home"
                           className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Home
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/skills"
                           aria-label="skills"
                           title="skills"
                           className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Skills
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/projects"
                           aria-label="projects"
                           title="Projects"
                           className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Projects
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/about"
                           aria-label="About me"
                           title="About me"
                           className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           About me
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/contact"
                           aria-label="contact"
                           title="contact"
                           className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Contact
-                        </a>
+                       </NavLink>
                       </li>
                     </ul>
                    
@@ -97,17 +120,17 @@ const Navbar = () => {
                           <div className="p-5 bg-white border rounded shadow-sm">
                             <div className="flex items-center justify-between mb-4">
                               <div>
-                                <a
-                                  href="/"
-                                  aria-label="Company"
-                                  title="Company"
+                                <NavLink
+                                 to="/"
+                                  aria-label="home"
+                                  title="home"
                                   className="inline-flex items-center"
                                 >
                                  
                                   <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                                     Md. Sayem miah
                                   </span>
-                                </a>
+                               </NavLink>
                               </div>
                               <div>
                                 <button
@@ -128,54 +151,69 @@ const Navbar = () => {
                             <nav>
                               <ul className="space-y-4">
                               <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/home"
                           aria-label="home"
                           title="home"
                           className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Home
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/skills"
                           aria-label="skills"
                           title="skills"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Skills
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/projects"
                           aria-label="projects"
                           title="Projects"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Projects
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/about"
                           aria-label="About me"
                           title="About me"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           About me
-                        </a>
+                       </NavLink>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/contact"
                           aria-label="contact"
                           title="contact"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Contact
-                        </a>
+                       </NavLink>
                       </li>
                               </ul>
                             </nav>
