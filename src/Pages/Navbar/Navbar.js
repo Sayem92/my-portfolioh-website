@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
-            <div className="p-3 bg-green-200">
+            <div className="p-1 bg-gray-800">
                 <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                   <div className="relative flex items-center justify-between">
                     <a
@@ -13,7 +13,7 @@ const Navbar = () => {
                       className="inline-flex items-center"
                     >
                      
-                      <span className="ml-2 text-xl md:text-4xl font-bold tracking-wide text-black uppercase">
+                      <span className="ml-2 text-xl md:text-2xl font-bold tracking-wide text-white uppercase">
                         MD. Sayem miah
                       </span>
                     </a>
@@ -23,7 +23,7 @@ const Navbar = () => {
                           href="/"
                           aria-label="home"
                           title="home"
-                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Home
                         </a>
@@ -33,7 +33,7 @@ const Navbar = () => {
                           href="/"
                           aria-label="skills"
                           title="skills"
-                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Skills
                         </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
                           href="/"
                           aria-label="projects"
                           title="Projects"
-                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Projects
                         </a>
@@ -51,11 +51,11 @@ const Navbar = () => {
                       <li>
                         <a
                           href="/"
-                          aria-label="About us"
-                          title="About us"
-                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                          aria-label="About me"
+                          title="About me"
+                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
-                          About us
+                          About me
                         </a>
                       </li>
                       <li>
@@ -63,7 +63,7 @@ const Navbar = () => {
                           href="/"
                           aria-label="contact"
                           title="contact"
-                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Contact
                         </a>
@@ -79,15 +79,15 @@ const Navbar = () => {
                       >
                         <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                           <path
-                            fill="currentColor"
+                            fill="#ffff"
                             d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
                           />
                           <path
-                            fill="currentColor"
+                            fill="#ffff"
                             d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
                           />
                           <path
-                            fill="currentColor"
+                            fill="#ffff"
                             d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
                           />
                         </svg>
@@ -132,7 +132,7 @@ const Navbar = () => {
                           href="/"
                           aria-label="home"
                           title="home"
-                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Home
                         </a>
@@ -160,11 +160,11 @@ const Navbar = () => {
                       <li>
                         <a
                           href="/"
-                          aria-label="About us"
-                          title="About us"
+                          aria-label="About me"
+                          title="About me"
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
-                          About us
+                          About me
                         </a>
                       </li>
                       <li>
