@@ -1,4 +1,5 @@
 import React from 'react';
+import TypeWriterEffect from 'react-typewriter-effect';
 
 const Header = () => {
     return (
@@ -12,13 +13,31 @@ const Header = () => {
                 <div className="p-4 pt-16">
                     <h1 className="text-5xl font-bold text-white">
                         Welcome! </h1>
-                    <h1 className="mt-4 text-4xl font-bold text-green-500">
-                        My name is MD. Sayem Miah  </h1>
-                    <h1 className=" my-4 text-xl font-bold text-white">
-                        MERN Stack Developer  </h1>
+                    <h1 className="my-4 text-4xl font-bold text-green-500">
+                        My Name is MD. Sayem Miah  </h1>
+
+
+                    <TypeWriterEffect
+                        textStyle={{
+                            fontFamily: 'Red Hat Display',
+                            color: '#d61ed9',
+                            fontWeight: 700,
+                            fontSize: '1.5em',
+                        }}
+                        startDelay={1000}
+                        cursorColor="#3F3D56"
+                        multiText={[
+                            'MERN Stack Developer',
+                            'Web Developer',
+                            'Frontend Developer',
+                            'JavaScript Developer',
+                        ]}
+                        multiTextDelay={2000}
+                        typeSpeed={30}
+                    />
 
                     <a href='https://drive.google.com/file/d/1AzYdgsQ2yNNYW8lsPwU2J7i8GpYYfRIF/view?usp=share_link'>
-                        <button className='btn btn-success text-white'>My resume</button>
+                        <button className='mt-4 btn btn-success text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>My resume</button>
 
                     </a>
                 </div>

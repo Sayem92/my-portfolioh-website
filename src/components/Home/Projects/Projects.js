@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../AuthProvider/AuthProvider';
 
 const Projects = () => {
+    const {projectId, setProjectId} = useContext(AuthContext)
+    console.log(projectId);
+
+
+
+
     return (
  <section className="">
     <div className="container px-6 py-10 mx-auto">
@@ -14,15 +22,17 @@ const Projects = () => {
                 >
                 <div
                     className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                    <h2 className="mt-4 text-2xl font-semibold text-white capitalize">Resale Phones Selling Page </h2>
+                    <h2 className="my-4 text-2xl font-semibold text-white capitalize">Resale Phones Selling Page </h2>
+              
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Buy any available phones</p>
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Pay amount easily</p>
+                    <p className="my-2 mb-3 text-lg  tracking-wider text-blue-200 uppercase ">✔ Choose buyer or seller account</p>
 
-                    <a href='https://sell-phones-bd.web.app/'>
-                    <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Live Demo</p>
-                    </a>
+                   <Link to={'/details'}>
+                   <button onClick={()=>setProjectId("01")}
+                    className='w-32 btn btn-success text-white  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Explore</button>
+                   </Link>
 
-                    <a href='https://github.com/Sayem92/sell-phones-bd-client-side'>
-                    <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Github Link</p>
-                    </a>
                 </div>
             </div>
 
@@ -31,16 +41,16 @@ const Projects = () => {
                 >
                 <div
                     className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                    <h2 className="mt-4 text-2xl font-semibold text-white capitalize">Photography Services Page</h2>
+                    <h2 className="my-4 text-2xl font-semibold text-white capitalize">Photography Services Page</h2>
 
-                    
-                    <a href='https://candid-captures.web.app/'>
-                    <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Live Demo</p>
-                    </a>
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Show all services</p>
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Post your review</p>
+                    <p className="my-2 mb-3 text-lg  tracking-wider text-blue-200 uppercase ">✔ To know about services</p>
 
-                    <a href='https://github.com/Sayem92/candid-captures-client-side'>
-                    <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Github Link</p>
-                    </a>
+                    <Link to={'/details'}>
+                    <button onClick={()=>setProjectId("02")}
+                    className='w-32 btn btn-success text-white  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Explore</button>
+                    </Link>
                 </div>
             </div>
 
@@ -50,16 +60,16 @@ const Projects = () => {
                 >
                 <div
                     className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                    <h2 className="mt-4 text-2xl font-semibold text-white capitalize">Learning Tutorials Page</h2>
+                    <h2 className="my-4 text-2xl font-semibold text-white capitalize">Learning Tutorials Page</h2>
+                    
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Daily learn something</p>
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Recap concepts</p>
+                    <p className="my-2 mb-3 text-lg  tracking-wider text-blue-200 uppercase ">✔ Tutorials on different topics</p>
 
-                    <a href='https://the-smart-tutor.web.app/'>
-                    <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Live Demo</p>
-                    </a>
-
-                    <a href='https://github.com/Sayem92/the-smart-tutor-client-side'>
-                    <p className="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Github Link</p>
-                    </a>
-
+                    <Link to={'/details'}>
+                    <button onClick={()=>setProjectId("03")}
+                    className='w-32 btn btn-success text-white  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Explore</button>
+                    </Link>
                 </div>
             </div>
         </div>

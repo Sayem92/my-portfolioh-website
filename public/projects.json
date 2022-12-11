@@ -1,0 +1,65 @@
+[
+    {
+        "id": "01",
+        "name": "Sell Phones BD (resale phones selling page)",
+
+        "img1": "https://i.ibb.co/yFQSQGd/sell-phones-bd-web-app-dashboard-my-Orders-1.png",
+
+        "img2": "https://i.ibb.co/K7rMXnf/sell-phones-bd-web-app-dashboard-my-Orders.png",
+
+        "img3": "https://i.ibb.co/ZLLnNkd/sell-phones-bd-web-app-dashboard-my-Orders-3.png",
+
+        "img4": "https://i.ibb.co/RPBh9Y7/sell-phones-bd-web-app-dashboard-my-Orders-2.png",
+
+
+        "d1": "Admin can see All Users (sellers or buyers) that login information on this site, Admin can delete any users.",
+        "d2": "Sellers can add a product, Advertise a product, Seller can See their product List, sell/available, and delete any added products. Uses Admin, sellers, and buyers dashboards.",
+        "d3": "Create account users choose seller or buyers account. Buyers can book a product, Buyers can see his products. If buyers of any product to paid this product are not displayed. The payment method uses stripe.",
+        "d4": "Verify route to JWT. Fully responsive page.",
+        "d5": "React, Tailwind, DaisyUI, React Dom, Firebase, MongoDB, Node, Express, Vercel, etc.",
+        "github": "https://github.com/Sayem92/sell-phones-bd-client-side",
+        "liveLink": "https://sell-phones-bd.web.app/"
+    },
+    {
+        "id": "02",
+        "name": "Candid Captures (photography services page)",
+
+        "img1": "https://i.ibb.co/cFp9KWx/candid-captures-web-app-4.png",
+
+        "img2": "https://i.ibb.co/r5C4q4h/candid-captures-web-app.png",
+
+        "img3": "https://i.ibb.co/k2PCW9h/candid-captures-web-app-3.png",
+
+        "img4":"https://i.ibb.co/0V6jH7Q/candid-captures-web-app-2.png",
+
+        "d1": "Users can see all services and details page. If the user login, you can add reviews for any services.",
+        "d2": "User all reviews show (my reviews). Users can edit, and delete any reviews.",
+        "d3": "Users can add any service on this page. Show more clients I served, most famous picture gallery.",
+        "d4": "Firebase authentication ans fully responsive page.",
+        "d5": "React, Tailwind, DaisyUI, React Dom, Firebase, MongoDB, Node, Express, Vercel, etc.",
+        
+        "github": "https://github.com/Sayem92/candid-captures-client-side",
+        "liveLink": "https://candid-captures.web.app/"
+    },
+    {
+        "id": "03",
+        "name": "The Smart Tutor (learning tutorials page)",
+
+        "img1": "https://i.ibb.co/jMHC5KJ/the-smart-tutor-web-app-tutorials.png",
+
+        "img2": "https://i.ibb.co/tP0Zg0Z/the-smart-tutor-web-app-tutorials-2.png",
+
+        "img3": "https://i.ibb.co/pb921XQ/the-smart-tutor-web-app-tutorials-1.png",
+
+        "img4": "https://i.ibb.co/5MPX4md/the-smart-tutor-web-app-tutorials-3.png",
+
+        "d1": "Users can see all tutorials and details page. If users log in there are shown to the checkout route.",
+        "d2": "Users can show category types tutorials. They are more information to get more ideas to try it.",
+        "d3": "Users can download PDF files of any details page. Any time practice this topic.",
+        "d4": "Verify route to JWT. Fully responsive page.",
+        "d5": "React, Tailwind, DaisyUI, React Dom, Firebase, MongoDB, Node, Express, Vercel, etc.",
+
+        "github": "https://github.com/Sayem92/the-smart-tutor-client-side",
+        "liveLink": "https://the-smart-tutor.web.app/"
+    }
+]
