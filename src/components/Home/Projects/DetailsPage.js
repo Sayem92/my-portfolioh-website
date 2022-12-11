@@ -5,21 +5,28 @@ import { AuthContext } from '../../../AuthProvider/AuthProvider';
 const DetailsPage = () => {
     const { projectId } = useContext(AuthContext);
     const [details, setDetails] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
 
     useEffect(() => {
+        setLoading(true)
         fetch('projects.json')
             .then(response => response.json())
             .then(data => {
                 console.log(data)
                 const mainData = data?.filter(singleData => singleData.id === projectId)
                 setDetails(mainData[0])
+                setLoading(false)
             })
     }, [projectId])
 
 
-    if(details===undefined) {
+    if (loading) {
+        return <div className='text-yellow-400 flex justify-center text-3xl'>Loading...</div>
+    }
+    
+    if (details === undefined) {
         return navigate('/')
     }
 
@@ -42,13 +49,13 @@ const DetailsPage = () => {
 
                     <h1 className="my-8 text-3xl font-semibold  text-green-400">{details?.name}</h1>
 
-                    
+
                     <p className="mt-2 capitalize text-gray-400">✅ {details?.d1}</p>
                     <p className="mt-2 capitalize text-gray-400">✅ {details?.d2}</p>
                     <p className="mt-2 capitalize text-gray-400">✅ {details?.d3}</p>
                     <p className="mt-2 capitalize text-gray-400">✅ {details?.d4}</p>
                     <p className="mt-2 capitalize text-gray-400">✅ Used Technology: {details?.d5}</p>
-                   
+
 
 
                     <div className="flex mt-7 gap-4">
