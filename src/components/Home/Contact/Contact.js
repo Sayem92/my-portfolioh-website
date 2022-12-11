@@ -6,15 +6,10 @@ import { toast } from 'react-hot-toast';
 const Contact = () => {
     const form = useRef();
 
-    const service_Id = process.env.REACT_APP_SERVICE_EMAIL_ID
-    const template_Id = process.env.REACT_APP_TEMPLATE_ID;
-    const public_Key = process.env.REACT_APP_PUBLIC_KEY;
- 
-
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(service_Id, template_Id, form.current, public_Key)
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_EMAIL_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
                 toast.success("send message");

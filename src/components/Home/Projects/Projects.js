@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
 
 const Projects = () => {
-    const {projectId, setProjectId} = useContext(AuthContext)
-    console.log(projectId);
-
-
-
-
+    const { setProjectId} = useContext(AuthContext)
+   
     return (
  <section className="">
     <div className="container px-6 py-10 mx-auto">

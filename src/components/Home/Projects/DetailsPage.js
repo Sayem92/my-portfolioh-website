@@ -14,7 +14,7 @@ const DetailsPage = () => {
         fetch('projects.json')
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 const mainData = data?.filter(singleData => singleData.id === projectId)
                 setDetails(mainData[0])
                 setLoading(false)
@@ -25,7 +25,7 @@ const DetailsPage = () => {
     if (loading) {
         return <div className='text-yellow-400 flex justify-center text-3xl'>Loading...</div>
     }
-    
+
     if (details === undefined) {
         return navigate('/')
     }
