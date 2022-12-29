@@ -9,6 +9,11 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        
+        if (!e.target[0].value || !e.target[1].value || !e.target[2].value) {
+            return toast.error("please enter a valid name, email address and description for this message.")
+        }
+        
         emailjs.sendForm(process.env.REACT_APP_SERVICE_EMAIL_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
