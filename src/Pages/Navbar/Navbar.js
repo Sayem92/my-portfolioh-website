@@ -34,7 +34,7 @@ const Navbar = () => {
                          to="/home"
                           aria-label="home"
                           title="home"
-                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Home
                        </NavLink>
@@ -47,7 +47,7 @@ const Navbar = () => {
                          to="/skills"
                           aria-label="skills"
                           title="skills"
-                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Skills
                        </NavLink>
@@ -60,9 +60,22 @@ const Navbar = () => {
                          to="/projects"
                           aria-label="projects"
                           title="Projects"
-                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Projects
+                       </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                         to="/blog"
+                          aria-label="blog"
+                          title="blog"
+                          className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                        >
+                          Blog
                        </NavLink>
                       </li>
                       <li>
@@ -73,7 +86,7 @@ const Navbar = () => {
                          to="/about"
                           aria-label="About me"
                           title="About me"
-                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           About me
                        </NavLink>
@@ -86,7 +99,7 @@ const Navbar = () => {
                          to="/contact"
                           aria-label="contact"
                           title="contact"
-                          className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Contact
                        </NavLink>
@@ -187,6 +200,19 @@ const Navbar = () => {
                           className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
                         >
                           Projects
+                       </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                        style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                      to="/blog"
+                      aria-label="blog"
+                      title="blog"
+                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+                        >
+                          Blog
                        </NavLink>
                       </li>
                       <li>

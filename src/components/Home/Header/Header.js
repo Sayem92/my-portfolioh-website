@@ -7,7 +7,7 @@ const Header = () => {
             <div className="container grid grid-cols-1 md:grid-cols-2">
 
                 <div className="flex justify-center ">
-                    <img src="https://i.ibb.co/3CR1d7z/IMG-20220211-WA0000.jpg" alt="" className="rounded-lg object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                    <img src="https://i.ibb.co/XyP6TzW/golf-field-18.jpg" alt="" className="rounded-lg object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                 </div>
 
                 <div className="p-4 pt-16">
