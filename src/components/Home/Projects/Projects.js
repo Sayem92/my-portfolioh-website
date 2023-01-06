@@ -12,9 +12,9 @@ const Projects = () => {
         </h1>
 
 
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-2">
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-                style={{backgroundImage:`url('https://i.ibb.co/SsJ4BRf/Screenshot-20.png')`}}
+                style={{backgroundImage:`url('https://i.ibb.co/F0Mr42X/sell-phones-bd-web-app-4.png')`}}
                 >
                 <div
                     className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
@@ -33,7 +33,7 @@ const Projects = () => {
             </div>
 
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-                style={{backgroundImage:`url('https://i.ibb.co/pfD49T8/Screenshot-21.png')`}}
+                style={{backgroundImage:`url('https://i.ibb.co/5RW8dNS/candid-captures-web-app-8.png')`}}
                 >
                 <div
                     className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
@@ -52,7 +52,7 @@ const Projects = () => {
 
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
               
-                style={{ backgroundImage: `url('https://i.ibb.co/VgSCqJ9/Screenshot-22.png')` }}
+                style={{ backgroundImage: `url('https://i.ibb.co/LSSchdW/the-smart-tutor-web-app-tutorials-4.png')` }}
                 >
                 <div
                     className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
@@ -64,6 +64,24 @@ const Projects = () => {
 
                     <Link to={'/details'}>
                     <button onClick={()=>setProjectId("03")}
+                    className='w-32 btn btn-success text-white  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Explore</button>
+                    </Link>
+                </div>
+            </div>
+            <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+              
+                style={{ backgroundImage: `url('https://i.ibb.co/n3SWR5T/to-do-list-b3341-web-app-7.png')` }}
+                >
+                <div
+                    className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+                    <h2 className="my-4 text-2xl font-semibold text-white capitalize">Task Management Page</h2>
+                    
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Easy to add task</p>
+                    <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">✔ Updated task any time</p>
+                    <p className="my-2 mb-3 text-lg  tracking-wider text-blue-200 uppercase ">✔ See task all information</p>
+
+                    <Link to={'/details'}>
+                    <button onClick={()=>setProjectId("04")}
                     className='w-32 btn btn-success text-white  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Explore</button>
                     </Link>
                 </div>

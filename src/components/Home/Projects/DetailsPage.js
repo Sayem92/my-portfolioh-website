@@ -1,4 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
 
@@ -36,14 +38,48 @@ const DetailsPage = () => {
                 <div className="container flex flex-col justify-center p-4 mx-auto">
                     <div className="grid grid-cols-1 gap-4 lg:grid-cols-1 md:grid-cols-2 ">
 
-                        <img className="object-cover w-full  rounded-lg bg-gray-500 " src={details?.img1} alt='' />
+                        <PhotoProvider
+                            speed={() => 800}
+                            easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                        >
+                            <PhotoView src={details?.img1}>
+                                <img style={{ objectFit: 'cover' }}
+                                    className='rounded-lg w-full' src={details?.img1} alt="phone" />
+                            </PhotoView>
+                        </PhotoProvider>
 
 
-                        <img className="object-cover w-full rounded-lg bg-gray-500" src={details?.img2} alt='' />
+                        <PhotoProvider
+                            speed={() => 800}
+                            easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                        >
+                            <PhotoView src={details?.img2}>
+                                <img style={{ objectFit: 'cover' }}
+                                    className='rounded-lg w-full' src={details?.img2} alt="phone" />
+                            </PhotoView>
+                        </PhotoProvider>
 
-                        <img className="object-cover w-full rounded-lg bg-gray-500" src={details?.img3} alt='' />
 
-                        <img className="object-cover w-full rounded-lg bg-gray-500" src={details?.img4} alt='' />
+                        <PhotoProvider
+                            speed={() => 800}
+                            easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                        >
+                            <PhotoView src={details?.img3}>
+                                <img style={{ objectFit: 'cover' }}
+                                    className='rounded-lg w-full' src={details?.img3} alt="phone" />
+                            </PhotoView>
+                        </PhotoProvider>
+
+
+                        <PhotoProvider
+                            speed={() => 800}
+                            easing={(type) => (type === 2 ? 'cubic-bezier(0.36, 0, 0.66, -0.56)' : 'cubic-bezier(0.34, 1.56, 0.64, 1)')}
+                        >
+                            <PhotoView src={details?.img4}>
+                                <img style={{ objectFit: 'cover' }}
+                                    className='rounded-lg w-full' src={details?.img4} alt="phone" />
+                            </PhotoView>
+                        </PhotoProvider>
 
                     </div>
 
