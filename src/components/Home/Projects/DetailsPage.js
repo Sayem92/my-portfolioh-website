@@ -95,10 +95,10 @@ const DetailsPage = () => {
 
 
                     <div className="flex mt-7 gap-4">
-                        <a href={details?.github}>
+                        <a href={details?.github} target='_blank' rel='noreferrer'>
                             <button className='btn btn-success text-black transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Github</button>
                         </a>
-                        <a href={details?.liveLink}>
+                        <a href={details?.liveLink} target='_blank' rel='noreferrer'>
                             <button className='btn btn-success text-black transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Live Demo</button>
                         </a>
                     </div>

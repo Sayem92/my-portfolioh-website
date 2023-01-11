@@ -27,16 +27,22 @@ const Header = () => {
                         startDelay={1000}
                         cursorColor="#3F3D56"
                         multiText={[
-                            'MERN Stack Developer',
                             'Web Developer',
-                            'Frontend Developer',
                             'JavaScript Developer',
+                            'React Developer',
+                            'MERN Stack Developer',
+                            'Frontend Developer',
+                            'Web Developer',
+                            'JavaScript Developer',
+                            'React Developer',
+                            'MERN Stack Developer',
+                            'Frontend Developer',
                         ]}
                         multiTextDelay={2000}
                         typeSpeed={30}
                     />
 
-                    <a href='https://drive.google.com/file/d/1AzYdgsQ2yNNYW8lsPwU2J7i8GpYYfRIF/view?usp=share_link'>
+                    <a href='https://drive.google.com/file/d/1AzYdgsQ2yNNYW8lsPwU2J7i8GpYYfRIF/view?usp=share_link' target='_blank' rel='noreferrer'>
                         <button className='mt-4 btn btn-success text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>My resume</button>
 
                     </a>

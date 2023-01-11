@@ -71,11 +71,11 @@ const Contact = () => {
 
                             <div className="flex mt-4 -mx-1.5 ">
 
-                                <a href="https://web.facebook.com/sayemahmed.sum"> <AiFillFacebook className='text-3xl text-gray-200 mr-3'></AiFillFacebook></a>
+                                <a href="https://web.facebook.com/sayemahmed.sum" target='_blank' rel='noreferrer'> <AiFillFacebook className='text-3xl text-gray-200 mr-3'></AiFillFacebook></a>
 
-                                <a href="https://www.linkedin.com/in/sayem-miha/"> <AiFillLinkedin className='text-3xl text-gray-200 mr-3'></AiFillLinkedin></a>
+                                <a href="https://www.linkedin.com/in/sayem-miha/" target='_blank' rel='noreferrer'> <AiFillLinkedin className='text-3xl text-gray-200 mr-3'></AiFillLinkedin></a>
 
-                                <a href="https://github.com/Sayem92"> <AiFillGithub className='text-3xl text-gray-200'></AiFillGithub></a>
+                                <a href="https://github.com/Sayem92" target='_blank' rel='noreferrer'> <AiFillGithub className='text-3xl text-gray-200'></AiFillGithub></a>
 
                             </div>
                         </div>

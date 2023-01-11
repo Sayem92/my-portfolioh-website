@@ -27,19 +27,19 @@ const About = () => {
                             <div className="grid grid-cols-1 gap-2 mt-6  md:grid-cols-2 lg:grid-cols-3 ">
 
                                 <div className=" ">
-                                    <a href='https://github.com/Sayem92'>
+                                    <a href='https://github.com/Sayem92' target='_blank' rel='noreferrer'>
                                         <button className='btn btn-success text-black transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>Github</button>
                                     </a>
                                 </div>
 
                                 <div className="">
-                                    <a href='https://www.linkedin.com/in/sayem-miha/'>
+                                    <a href='https://www.linkedin.com/in/sayem-miha/' target='_blank' rel='noreferrer'>
                                         <button className='btn btn-success text-black transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>LinkedIn</button>
                                     </a>
                                 </div>
 
                                 <div className="">
-                                    <a href='https://web.facebook.com/sayemahmed.sum'>
+                                    <a href='https://web.facebook.com/sayemahmed.sum' target='_blank' rel='noreferrer'>
                                         <button className='btn btn-success text-black transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>FaceBook</button>
                                     </a>
                                 </div>
