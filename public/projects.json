@@ -82,5 +82,26 @@
 
         "github": "https://github.com/Sayem92/To-do-List-client-site",
         "liveLink": "https://to-do-list-b3341.web.app/"
+    },
+    {
+        "id": "05",
+        "name": "FreelanceNation (Digital Marketplace  Page)",
+
+        "img1": "https://i.ibb.co/0sJKQJs/freelancernation-web-app-7.png",
+
+        "img2": "https://i.ibb.co/ww1FMz0/freelancernation-web-app-registration.png",
+
+        "img3": "https://i.ibb.co/5RQm9nx/freelancernation-web-app-seller.png",
+
+        "img4": "https://i.ibb.co/rcPrJst/freelancernation-web-app.png",
+
+        "d1": "First time sign in to add Gig or Order easily. Because all Gig and Orders are secure and private.",
+        "d2": "You can see your all Gig(seller),created and deleted any Gig easily. Details are available.",
+        "d3": "If the Gig is completed you can delete it easily.Discuss to buyer if you have any question.",
+        "d4": "Without login buyers can not order any Gigs. Fully responsive page. Added admin dashboard.",
+        "d5": "React, Tailwind, Meraki UI, React Dom, Firebase, MongoDB, Node, Express, Vercel etc.",
+
+        "github": "https://github.com/Sayem92/FreelancerNation-client-side",
+        "liveLink": "https://freelancernation.web.app/"
     }
 ]
