@@ -172,6 +172,38 @@ const Projects = () => {
               </Link>
             </div>
           </div>
+
+          <div
+            className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+            style={{
+              backgroundImage: `url('https://i.ibb.co/FWVXB0r/billing-home.png')`,
+            }}
+          >
+            <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+              <h2 className="my-4 text-2xl font-semibold text-white capitalize">
+                Online Billing Page
+              </h2>
+
+              <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">
+                ✔ You can edit and delete your bill.
+              </p>
+              <p className="mt-2 text-lg tracking-wider text-blue-200 uppercase ">
+                ✔ Easily search and find your bill.
+              </p>
+              <p className="my-2 mb-3 text-lg  tracking-wider text-blue-200 uppercase ">
+                ✔ See all billing information
+              </p>
+
+              <Link to={"/details"}>
+                <button
+                  onClick={() => setProjectId("06")}
+                  className="w-32 btn btn-success text-white  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  Explore
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

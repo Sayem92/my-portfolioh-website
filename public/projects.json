@@ -85,7 +85,7 @@
     },
     {
         "id": "05",
-        "name": "FreelanceNation (Digital Marketplace  Page)",
+        "name": "FreelanceNation (digital marketplace page)",
 
         "img1": "https://i.ibb.co/0sJKQJs/freelancernation-web-app-7.png",
 
@@ -103,5 +103,26 @@
 
         "github": "https://github.com/Sayem92/FreelancerNation-client-side",
         "liveLink": "https://freelancernation.web.app/"
+    },
+    {
+        "id": "06",
+        "name": "Online Billing Page (digital data store page)",
+
+        "img1": "https://i.ibb.co/FWVXB0r/billing-home.png",
+
+        "img2": "https://i.ibb.co/PZxWgM8/billing-table.png",
+
+        "img3": "https://i.ibb.co/GcnsLBj/billing-add.png",
+
+        "img4": "https://i.ibb.co/442N4xf/billing-edit-modal.png",
+
+        "d1": "First time sign in to add bill easily. Because billing page secure and private.",
+        "d2": "You can see all billing details,edit and deleted any bill easily.",
+        "d3": "You can find your bill details easily, here add a filtering functionality.",
+        "d4": "Without login you can not add any bill. Fully responsive page. Added pagination system.",
+        "d5": "React, Tailwind, Meraki UI, React Dom, Firebase, MongoDB, Node, Express, Vercel etc.",
+
+        "github": "https://github.com/Sayem92/PH-billing-table-task",
+        "liveLink": "https://programming-hero-billing-job-task.netlify.app/"
     }
 ]
