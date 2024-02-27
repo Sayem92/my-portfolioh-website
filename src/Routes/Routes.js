@@ -9,44 +9,42 @@ import Projects from "../components/Home/Projects/Projects";
 import Main from "../layout/Main";
 
 export const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
         path: "/",
-        element: <Main></Main>,
-        children: [
-            {
-                path: "/",
-                element: <Home />
-            },
-            {
-                path: "/home",
-                element: <Home />
-            },
-            {
-                path: "/skills",
-                element: <Myskills></Myskills>
-            },
-            {
-                path: "/projects",
-                element: <Projects></Projects>
-            },
-            {
-                path: "/about",
-                element: <About></About>
-            },
-            {
-                path: "/contact",
-                element: <Contact></Contact>
-            },
-            {
-                path: "/blog",
-                element: <Blog></Blog>
-            },
-            {
-                path: "/details",
-                element: <DetailsPage></DetailsPage>
-            },
-
-        ]
-    }
-        
-])
+        element: <Home />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/skills",
+        element: <Myskills></Myskills>,
+      },
+      {
+        path: "/projects",
+        element: <Projects></Projects>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/details",
+        element: <DetailsPage></DetailsPage>,
+      },
+    ],
+  },
+]);
